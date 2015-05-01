@@ -1,0 +1,408 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.wrapper{
+	width: 1440px;
+}
+
+h1.heroText{
+	text-align: center;
+	color: white;
+	padding-top: 125px;
+	font-size: 60px;
+	width: 760px;
+	margin: 0 auto;
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	margin: 0;
+}
+
+h2{
+	color: #00bcd4; 
+	text-transform: uppercase;
+	text-align: center;
+	/*margin: 15px, 0, 15px, 0;*/
+	font-size: 45px;
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+h4{
+	color: white;
+	font-size: 21px;
+	margin: 0 auto;
+}
+
+h5{
+	text-align: center;
+	/*font-size: 40px;*/
+}
+
+body{
+	background-color: white;
+	color: #3d3d3d;
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+
+}
+
+.header {
+	padding: 20px 0;
+}
+
+a{
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	color: #3d3d3d;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+a:hover{
+	color: #FF5722;
+}
+
+.logo{
+	float: left;
+	padding-left: 20px;
+}
+
+.nav ul {
+	float: right;
+	margin-right: 50px;
+}
+
+.nav ul li{
+	display: inline-block;
+	padding: 15px 25px 5px 25px;
+	position: relative;
+}
+
+.sub-nav{
+	position: absolute;
+	display: none;
+	padding: 0;
+	background: white;
+	/*border-bottom: 1px solid #00bcd4;*/
+}
+
+.sub-nav li {
+	padding: 0;
+}
+
+.nav ul li a:hover + .sub-nav {
+	display: block;
+}
+
+.hero{
+	background-image: url(images/hero-image.jpg);
+	height: 100vh;
+	background-size: cover;
+	padding-top: 50px;
+	margin: 0;
+}
+
+p.heroText{
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+	padding-bottom: 50px;
+	font-size: 28px;
+}
+
+.getStarted{
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 12px;
+	margin-left: 650px;
+	transition:all 0.5s;
+}
+
+.getStarted:hover{
+	background-color: white;
+	color:#3d3d3d;
+}
+
+.aboutIcons{
+	background-color: #00bcd4;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+i.fa {
+	font-size: 100px;
+	color: white;
+	margin: 0 85px 0 155px;
+	text-align: center;
+}
+
+.iconText{
+	color: white;
+	width: 12%;
+	text-align: center;
+	float: right;
+	margin-right: 160px;
+	line-height: 1.5;
+}
+
+.kayakingImage{
+	background-image: url(images/kayaking.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+.kayaking{
+	width: 30%;
+	float: right;
+	line-height: 1.5;
+	background-color: #00bcd4;
+	padding: 10px;
+	margin-right: 50px;	
+	margin-top: -250px;
+	border-radius: 10px;
+}
+
+.hikingImage{
+	background-image: url(images/hiking.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+.hiking{
+	width: 30%;
+	float: left;
+	line-height: 1.5;
+	background-color: #00bcd4;
+	padding: 10px;
+	margin-left: 50px;	
+	margin-top: -250px;
+	margin-bottom: 38px;
+	border-radius: 10px;
+	clear: both;
+}
+.bikingImage{
+	background-image: url(images/mountain-biking.jpg);
+	background-size: cover;
+	height: 300px;
+}
+
+.biking{
+	width: 30%;
+	float: right;
+	line-height: 1.5;
+	background-color: #00bcd4;
+	padding: 10px;
+	margin-right: 50px;	
+	margin-top: -250px;
+	margin-bottom: 38px;
+	border-radius: 10px;
+}
+
+.learnMore{
+	color: white;
+	float: right;
+	margin-top: 15px;
+}
+
+p.adventures{
+	color: white;
+}
+
+.bookNow{
+	text-align: left;
+	padding-left: 75px;
+	clear: both;
+	/*margin: 0 auto;*/
+	width: 65%;
+}
+
+.bookLink{
+	border: 2px solid #00bcd4;
+	float: right;
+	margin-top: -90px;
+	padding: 12px;
+	margin-right: 250px;
+	color: #00bcd4;
+	transition:all 0.5s;
+}
+
+.bookLink:hover{
+	background-color: #00bcd4;
+	color: white;
+
+}
+
+.packages{
+	background-color: #00bcd4;
+}
+
+.packages h2{
+	color: white;
+	text-align: center;
+	padding-top: 40px;
+	margin: 0 auto;	
+}
+
+.adventurePackages{
+	background-color: white;
+	width: 378px;
+	display: inline-block;
+	margin: 47px;
+	box-shadow: 3px 3px 10px #6b6b6b;
+}
+
+.packageText{
+	width: 65%;
+	padding: 20px;
+	line-height: 1.5;
+	float: left;
+	letter-spacing: .25px;
+}
+
+.packageText h4{
+	color: #00bcd4;
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+}
+
+.learnMorePackages{
+	color: #00bcd4;
+}
+
+.packagePrice{
+	width: 30%;
+	float: right;
+	font-family: Oswald, Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 1.25;
+	color: #00bcd4;
+	margin-top: 65px;
+	text-transform: uppercase;
+}
+
+form.login{
+	width: 700px;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+input.submitButton{
+	border: 2px solid white;
+	background-color: #0097A7;
+	color: white;
+	padding: 5px;
+	transition:all 0.5s;
+	text-transform: uppercase;
+}
+
+input.submitButton:hover{
+	background-color: white;
+	color: #0097A7;
+}
+
+input.password{
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+input.username{
+	margin-left: 5px;
+	margin-right: 15px;
+}
+
+.contact{
+	background-color: #0097A7;
+	margin: 0 auto;
+	padding: 0;
+	color: white;
+}
+
+.twitter-share-button{
+	float: right;
+	margin-top: 25px;
+}
+
+.contact h3{
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 25px;
+	margin-bottom: 25px;
+	font-family: Source Sans Pro, Helvetica, Arial, sans-serif;
+	font-size: 30px;
+}
+.contact{
+	text-align: center;
+	padding: 15px 0 15px 0;
+	background-color: #1697A6;
+	width: 100%;
+}
+
+a.register{
+	color: white;
+	width: 200px;
+	border: 2px solid white;
+	padding: 7px;
+	margin-left: 10px;
+	transition:all 0.5s;
+}
+
+a.register:hover{
+	background-color: white;
+	color: #0097A7;
+}
+
+.twitterFeed{
+	width: 50%;
+	background-color: #B2EBF2;
+	padding: 0px 0 79px 100px;
+	float: left;
+}
+
+.youtube{
+	width: 50%;
+	background-color: #69DFED;
+	float: right;
+	padding: 0px 0 264px 80px;
+}
+
+.youtube h3{
+	color: white;
+	font-size: 31px;
+}
+
+.twitterFeed h3{
+	color: #3D3D3D;
+	font-size: 31px;
+	text-transform: uppercase;
+}
+
+.footer{
+	background-color: #448AFF;
+	margin: 0 auto;
+	clear: both;
+	padding: 10px 0 10px 10px;
+}
+
+.footer p{
+	color: white;
+}
+
+.footer img{
+	float: right;
+	margin-left: 10px;
+	margin-top: -25px;
+	margin-right: 10px;
+}
+
